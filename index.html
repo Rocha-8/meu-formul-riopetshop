@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>PET SHOP ROCHA</title>
+</head>
+<header> <!--LOGO E SLOGAN-->
+    <img src="images/LOGO.png" alt="">
+    <h1>A felicidade do seu pet é nossa prioridade.</h1>
+</header>
+<body>
+    <div class="container"> <!--FORMULÁRIO A PREENCHER-->
+        <h1>Agende um Serviço</h1>
+        <form action="seu_script_de_processamento.php" method="POST">
+            <div class="form-group">
+                <label for="nome_pet">Nome do Pet:</label>
+                <input type="text" id="nome_pet" name="nome_pet" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo_pet">Tipo de Animal:</label>
+                <select id="tipo_pet" name="tipo_pet" required>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="servico">Serviço Desejado:</label>
+                <input type="text" id="servico" name="servico" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data do Agendamento:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <input type="submit" value="Agendar">
+        </form>
+    </div>
+</body>
+</html>
